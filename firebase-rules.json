@@ -1,0 +1,19 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "aleena-sudheesh": {
+      "wishes": {
+        ".read": "query.orderByKey && query.limitToLast <= 50",
+        "$wishId": {
+          ".write": "!data.exists() && newData.exists()",
+          ".validate": "newData.hasChildren(['name','msg','ts'])",
+          "name": { ".validate": "newData.isString() && newData.val().length >= 1 && newData.val().length <= 60" },
+          "msg":  { ".validate": "newData.isString() && newData.val().length >= 2 && newData.val().length <= 400" },
+          "ts":   { ".validate": "newData.isNumber() && newData.val() === now" },
+          "$other": { ".validate": false }
+        }
+      }
+    }
+  }
+}
