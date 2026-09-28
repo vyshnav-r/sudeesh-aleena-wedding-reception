@@ -4,7 +4,7 @@ window.WEDDING_CONFIG = {
   // appears on the page for all guests. See SETUP.md (about 5 minutes, free).
   // Example: 'https://your-project-default-rtdb.asia-southeast1.firebasedatabase.app'
   // Left empty, the page runs in preview mode: wishes stay on the visitor's own device only.
-  wishesDb: '',
+  wishesDb: 'https://aleena-sudheesh-wedding-default-rtdb.asia-southeast1.firebasedatabase.app',
 
   // Where wishes are stored inside the database (letters, numbers, - and _ only)
   wishesNode: 'aleena-sudheesh/wishes',
