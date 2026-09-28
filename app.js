@@ -14,7 +14,7 @@ if(!/^[A-Za-z0-9_-]+(\/[A-Za-z0-9_-]+)*$/.test(CFG.wishesNode))CFG.wishesNode='a
 var MVOL=parseFloat(CFG.musicVolume);if(!(MVOL>=.05&&MVOL<=1))MVOL=.5;
 
 var EVENTS={
-  rc:{title:'Wedding Reception, Aleena & Sudheesh',start:'20261025T053000Z',end:'20261025T093000Z',loc:'Vyapara Bhavan, Padiyottuchal, Payyannur, Kannur'}
+  rc:{title:'Wedding Reception, Sudheesh & Aleena',start:'20261025T053000Z',end:'20261025T093000Z',loc:'Vyapara Bhavan, Padiyottuchal, Payyannur, Kannur'}
 };
 
 /* ---------- Line drawing: measure each line and use its real length (does not rely on SVG pathLength, which Safari handles unevenly) ---------- */
@@ -269,7 +269,7 @@ if(icsBtn)icsBtn.addEventListener('click',function(){
   });
   L.push('END:VCALENDAR');
   var b=new Blob([L.join('\r\n')],{type:'text/calendar'}),a=document.createElement('a');
-  a.href=URL.createObjectURL(b);a.download='Aleena-Sudheesh-Wedding.ics';document.body.appendChild(a);a.click();a.remove();
+  a.href=URL.createObjectURL(b);a.download='Sudheesh-Aleena-Wedding.ics';document.body.appendChild(a);a.click();a.remove();
 });
 
 /* ---------- Input hygiene (shared by RSVP and wishes) ---------- */
